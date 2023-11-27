@@ -4,9 +4,9 @@
   "description": "",
   "private": false,
   "type": "module",
-  "main": "./lib/yyg-demo-ui.umd.js",
-  "module": "./lib/yyg-demo-ui.es.js",
-  "types": "./lib/yyg-demo-ui/index.d.ts",
+  "main": "./lib/hj-ui.umd.js",
+  "module": "./lib/hj-ui.es.js",
+  "types": "./lib/hj-ui/index.d.ts",
   "files": [
     "./lib",
     "package.json",
@@ -14,8 +14,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./lib/yyg-demo-ui.umd.js",
-      "import": "./lib/yyg-demo-ui.es.js"
+      "require": "./lib/hj-ui.umd.js",
+      "import": "./lib/hj-ui.es.js"
     }
   },
   "scripts": {
