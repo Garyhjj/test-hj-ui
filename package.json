@@ -2,7 +2,22 @@
   "name": "@hj-ui/docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": false,
+  "type": "module",
+  "main": "./lib/yyg-demo-ui.umd.js",
+  "module": "./lib/yyg-demo-ui.es.js",
+  "types": "./lib/yyg-demo-ui/index.d.ts",
+  "files": [
+    "./lib",
+    "package.json",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "require": "./lib/yyg-demo-ui.umd.js",
+      "import": "./lib/yyg-demo-ui.es.js"
+    }
+  },
   "scripts": {
     "dev:dev": "pnpm run -C example dev:dev",
     "dev:uat": "pnpm run -C example dev:uat",
@@ -23,7 +38,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "workspaces": [
     "packages/*",
     "cli",
