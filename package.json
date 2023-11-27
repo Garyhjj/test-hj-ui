@@ -14,6 +14,7 @@
   ],
   "exports": {
     ".": {
+      "types": "./lib/hj-ui/index.d.ts",
       "require": "./lib/hj-ui.umd.js",
       "import": "./lib/hj-ui.es.js"
     }
