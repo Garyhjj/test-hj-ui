@@ -1,0 +1,35 @@
+{
+  "name": "@hj-ui/hj-ui",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "type": "module",
+  "main": "./lib/yyg-demo-ui.umd.js",
+  "module": "./lib/yyg-demo-ui.es.js",
+  "types": "./lib/yyg-demo-ui/index.d.ts",
+  "files": [
+    "./lib",
+    "package.json",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "require": "./lib/yyg-demo-ui.umd.js",
+      "import": "./lib/yyg-demo-ui.es.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf ../../lib && vue-tsc --noEmit && vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hj-ui/aa": "workspace:^",
+    "@hj-ui/foo": "workspace:^"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "vite-plugin-dts": "^3.6.3"
+  }
+}
