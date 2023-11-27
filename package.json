@@ -1,6 +1,5 @@
 {
   "name": "@hj-ui/docs",
-  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
