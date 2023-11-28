@@ -6,7 +6,7 @@ const argv = minimist(process.argv.slice(2))
 const build = argv.build || false
 
 export default defineConfig({
-  base: build ? '/yyg-demo-ui/' : '/',
+  base: build ? '/test-hj-ui/' : '/',
   plugins: [
     VueJsx()
   ],
